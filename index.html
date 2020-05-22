@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src = "./parcialJS.js"> </script>
+    <link rel="stylesheet" href="./hojaStyleParcial.css" >  
+    <script type = "text/javascript">
+       
+    </script>
+</head>
+
+<body>
+    <div class= "loadingClass" >
+        <img id="load" src="loading.gif" hidden>
+    </div>
+
+    <div id ="contenedorGlobal"> 
+
+    <div class = "bAgregar">
+        <input type ="button" value = "Agregar" onclick="contenedorAparecer()" hidden>
+    </div>
+    <h2></h2>
+    <div class ="container" id="containerAgregar" hidden>
+        <div class ="divCerrar">
+                <div class ="bCerrar">
+                   <button class ="cerrar" onclick="contenedorDesaparecer()"> X</button>
+                    </div>
+        </div>
+                <label for="fname">Nombre</label><br>
+                <input type = "text" id ="fname" class="sinError" name ="firstname" placeholder="ingresa tu nombre...">
+                <br>
+                <label for="Cuatrimestre">Cuatrimestre</label><br>
+                <select 
+                 id ="Cuatrimestre" class="sinError" name ="lastname" placeholder="ingresa tu Cuatrimestre...">
+                <option value="1">Primero</option>
+                <option value="2">Segundo</option>
+                <option value="3">Tercero</option>
+                <option value="4">Cuarto</option>
+                </select>
+                <br><br>
+                <label for="fecha">FechaFinal</label><br>
+                <input type = "date" id ="fecha" class="sinError" name ="fecha" placeholder="ingresa tu fecha nacimiento...">
+                <label>Turno</label>
+                <br>
+                <div>
+                    <input type="radio" id="mañana" class="sinError" name="turno">
+                    <label for="mañana">Mañana</label>
+                </div>
+                <br>
+                <div>
+                    <input type="radio" id="noche" name="turno">
+                    <label for="noche">Noche</label>
+                </div>
+            <br>
+
+                <br>
+                <!-- <div class ="bCerrar">
+                    <input type="button" value = "Guardar" onclick="agregar()">
+                    <input type="button" value = "Guardar" onclick="agregar()">
+                </div> -->
+                <div class ="bModElim">
+                    <input type="button" class ="bEliminar" value = "Eiminar" id ="bEliminar" onclick="ejecutarEliminar()" >
+                    <input type="button" value = "Modificar" id ="btnModificar" onclick="Modificar()">
+                </div>
+        
+    </div>
+        <h2>Lista de personas</h2> 
+        <table id="tabla">
+            <thead>
+                <tr>
+                   <th>Nombre</th> 
+                   <th>Cuatrimestre</th> 
+                   <th>FechaFinal</th> 
+                   <th>Turno</th> 
+                    <!-- <th>Accion</th>  -->
+                </tr>
+            </thead>
+            <tbody id= "tCuerpo">
+                <tr>
+                    
+                </tr>
+                <tr>   </tr>
+                <tr>    </tr>
+                <tr>    </tr>
+                <tr>   </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
